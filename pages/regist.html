@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration page☺</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+        crossorigin="anonymous">
+
+        <style>
+          .forem{
+            align-items: center;
+            margin: 80px;
+            padding: 20px;
+          }
+        </style>
+
+    </head>
+    <body>
+
+      
+  <header class="w3-container w3-red w3-center" style="padding:128px 16px; text-align: center;">
+    <img id="logo" src="static/image/favicon.ico" alt="logo here" width="50px" height= "50px">
+    <h1 class="w3-margin w3-jumbo">GET CART</h1>
+    <p class="w3-xlarge">ONE DESTINATION FOR ALL | <u>SAFE.SECURE</u> </p>
+
+  </header>
+
+<form class="forem"  name="myForm" action="regist"  method="post">
+  {% csrf_token %}  
+    <div class="form-floating mb-3">
+      <label for="floatingInput">Email address</label>
+        <input type="email" class="form-control" id="floatingInput" name="gmail" placeholder="name@example.com">
+      </div>
+      <div class="form-floating">
+        <label for="floatingInput">Username</label>
+        <input type="text" class="form-control" id="floatingInput" name="username" placeholder="Username">
+        
+      </div>
+    </br>
+    
+      <div class="form-floating">
+        <label for="floatingPassword">Password</label>
+        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+        
+      </div>
+    </br>
+      <div class="form-floating">
+        <label for="floatingPassword">Confirm Password</label>
+        <input type="password" class="form-control" id="floatingPassword" name="cpassword" placeholder="Password">
+        
+      </div>
+    </br>
+  </br>
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+</form>
+<div>
+  {% for message in messages %}
+    <h3>{{message}}</h3>
+  {% endfor %}
+</div>
+
+
+
+    </body>
+
+</html>
+
+
+
+
