@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ix8$9^(j3^07$cojtn4zn4r8y$5rk^e=mo-hjt4)^mwkz2$%#m'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -149,7 +149,3 @@ STATICFILES_DIRS = [
 #MEDIA_URL='/media/'
 #MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
-
-#Payment Gateway Setting
-razorpay_id="rzp_test_CE7HqX0zNcRHwd"
-razorpay_account_id="tWzLGGO3QXFyE1hUeYKQwR2i"
